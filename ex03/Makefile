@@ -1,15 +1,19 @@
-SRCS = main.cpp Fixed.cpp
+SRCS = main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJS = $(SRCS:%.c=$(OBJS_DIR)/%.o)
-NAME = Fixed
+NAME = BSP
 VPATH = .
 
 I_DIRS := $(shell find . -type f -name "*.h" -exec dirname {} + | uniq)
 INCLUDE = $(I_DIRS:%=-I%)
 
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -fsanitize=address -g
+CFLAGS := -Wall -Werror -Wextra -fsanitize=address -g
 OBJS_DIR = ./objs
+
+ifdef LOG
+	CFLAGS	+=-D LOG=0
+endif
 
 RM = rm -f
 

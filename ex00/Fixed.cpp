@@ -6,7 +6,7 @@
 /*   By: bootjan <bootjan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 14:04:52 by bschaafs          #+#    #+#             */
-/*   Updated: 2024/01/10 22:20:08 by bootjan          ###   ########.fr       */
+/*   Updated: 2024/01/11 21:28:52 by bootjan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	print_message(const std::string msg)
 {
-	if (OUTPUT)
+	if (LOG)
 		std::cout << msg << std::endl;
 }
 

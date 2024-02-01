@@ -6,7 +6,7 @@
 /*   By: bootjan <bootjan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 14:05:04 by bschaafs          #+#    #+#             */
-/*   Updated: 2024/01/10 22:22:20 by bootjan          ###   ########.fr       */
+/*   Updated: 2024/01/11 21:28:03 by bootjan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 # define FIXED_HPP
 
 # include <iostream>
+
+# define BIT_OFFSET 8
+
+# ifndef LOG
+#  define LOG 1
+# endif
 
 class Fixed
 {
